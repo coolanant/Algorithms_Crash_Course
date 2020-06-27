@@ -43,7 +43,7 @@ Sorted each string, then sorted full array.
     return fibo(n-1)+fibo(n-2);
 }
 ```
-> Time - O(2^n)   (branches^depth)
+> Time - O(2^n)  =  (branches^depth)
 
 ```c++
 6. boolean IsPrime(int n){
