@@ -20,6 +20,16 @@ int gcd2(int a, int b){
     }
 }
 
+// 3. IsPrime
+int isPrime(int n){
+       for(int i=2;i*i<n;i++){
+        if(n%i==0){
+            return -1;
+        }
+    }
+    return 1;
+}
+
 int main() {
     // 1. Birthday Paradox
     float prob=1;
