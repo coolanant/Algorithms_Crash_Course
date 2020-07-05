@@ -23,7 +23,11 @@ int main() {
     // 4. Toggle Bit
     n = n ^ (1<<k); // x^0=x // x^1 =~x
     
-    // 5. Print Bits
+    // 5. Odd Even
+    if(n&1)cout<<endl<<"odd"<<endl;
+    else cout<<endl<<"even";
+    
+    // 6. Print Bits
     n=8;
     for(int i=31;i>=0;i--){
         if((n & (1<<i))==0){
