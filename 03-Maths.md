@@ -55,7 +55,7 @@ int main() {
     }
     cout<<people;
     
-    // Pascal triangle
+    // Pascal triangle O(n3)
     // cout<<binom(3,2); //=>(3*2)/2
     for(int i=0;i<5;i++){
         for(int j=0;j<=i;j++){
@@ -63,5 +63,16 @@ int main() {
         }
         cout<<endl;
     }
+    
+    // O(n,2)
+    for (int line = 1; line <= n; line++) { 
+    int C = 1; 
+    for (int i = 1; i <= line; i++){
+        cout<< C<<" ";  
+        C = C * (line - i) / i;  
+    } 
+    cout<<"\n"; 
+    } 
+    
 }
 ```
