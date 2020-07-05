@@ -66,12 +66,12 @@ int main() {
     
     // O(n,2)
     for (int line = 1; line <= n; line++) { 
-    int C = 1; 
-    for (int i = 1; i <= line; i++){
-        cout<< C<<" ";  
-        C = C * (line - i) / i;  
-    } 
-    cout<<"\n"; 
+        int C = 1; 
+        for (int i = 1; i <= line; i++){
+             cout<< C<<" ";  
+             C = C * (line - i) / i;  
+        } 
+        cout<<"\n"; 
     } 
     
 }
