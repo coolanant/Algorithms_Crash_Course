@@ -30,6 +30,19 @@ int isPrime(int n){
     return 1;
 }
 
+// 4. Binomial Coeff
+int binom(int n,int k){
+    int ans=1;
+    if(k>n-k){
+        k=n-k;
+    }
+    for(int i=0;i<k;i++){
+        ans*=(n-i);
+        ans/=(i+1);
+    }
+    return ans;
+}
+
 int main() {
     // 1. Birthday Paradox
     float prob=1;
@@ -41,5 +54,14 @@ int main() {
         people++;
     }
     cout<<people;
+    
+    // Pascal triangle
+    // cout<<binom(3,2); //=>(3*2)/2
+    for(int i=0;i<5;i++){
+        for(int j=0;j<=i;j++){
+            cout<<binom(i,j)<<" ";
+        }
+        cout<<endl;
+    }
 }
 ```
