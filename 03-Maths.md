@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-// 2. GCD
+// 2. GCD - Euclid's Algo
 //O(log(a+b))
 int gcd(int a,int b){
      return b==0? a : gcd(b,a%b);
@@ -13,10 +13,10 @@ int gcd2(int a, int b){
         return a;
     }
     if(a>b){
-        return gcd(a-b,b);
+        return gcd2(a-b,b);
     }
     else{
-        return gcd(a,b-a);
+        return gcd2(a,b-a);
     }
 }
 
