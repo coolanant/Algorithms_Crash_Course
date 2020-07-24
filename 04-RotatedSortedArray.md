@@ -30,27 +30,27 @@ int binarySearch(vector<int> arr,int f, int l, int val){
 bool search(vector<int>& nums, int target) {
 	int n = nums.size(), start = 0, end = n-1;
 	while(start <= end){
-		int mid = start + (end-start)/2;
-		if(nums[mid] == target)
-			return true;
+	int mid = start + (end-start)/2;
+	if(nums[mid] == target)
+		return true;
 
-		if(nums[mid] < nums[end]){
-			if(nums[mid] < target && target <= nums[end]){
-				start = mid+1;
-			}else{
-				end = mid-1;
-			}
-		}else if(nums[mid] > nums[end]){
-			if(nums[start] <= target && target < nums[mid]){
-				end = mid-1;
-			}else{
-				start = mid+1;
-			}
+	if(nums[mid] < nums[end]){
+		if(nums[mid] < target && target <= nums[end]){
+			start = mid+1;
 		}else{
-			end--;
+			end = mid-1;
 		}
+	}else if(nums[mid] > nums[end]){
+		if(nums[start] <= target && target < nums[mid]){
+			end = mid-1;
+		}else{
+			start = mid+1;
+		}
+	}else{
+		end--;
 	}
-	return false;
+}
+return false;
 }
 
 
@@ -74,16 +74,16 @@ int findMin(vector<int> arr, int low, int high){
 
 // If Duplicates in Array
 int findmin(vector<int> arr, int low, int high) { 
-	while(low < high) { 
-		int mid = low + (high - low)/2; 
-		if (arr[mid] == arr[high]) 
-			high--; 
-		else if(arr[mid] > arr[high]) 
-			low = mid + 1; 
-		else
-			high = mid; 
-	} 
-	return arr[high]; 
+    while(low < high) { 
+	int mid = low + (high - low)/2; 
+	if (arr[mid] == arr[high]) 
+		high--; 
+	else if(arr[mid] > arr[high]) 
+		low = mid + 1; 
+	else
+		high = mid; 
+   } 
+   return arr[high]; 
 } 
 
 // 3. Find Max Element
