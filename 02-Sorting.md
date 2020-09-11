@@ -146,7 +146,7 @@ int main() {
     
     
     // 2. ADVANCED
-    // mergesort(arr,0,arr.size());
+    // mergesort(arr,0,arr.size()-1);
     
     // quicksort(arr,0,arr.size());
     
