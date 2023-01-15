@@ -163,9 +163,6 @@ int main() {
     }
 }
 
-
-
-```
 Algorithm	Time Complexity	Space Complexity
  	  Best	Average	Worst	      Worst
 Selection Sort	Ω(n^2)	θ(n^2)	O(n^2)	O(1)
@@ -181,3 +178,6 @@ Shell Sort	Ω(n log(n))	θ(n log(n))	O(n^2)	O(1)
 Tim Sort	Ω(n)	θ(n log(n))	O(n log (n))	O(n)
 Tree Sort	Ω(n log(n))	θ(n log(n))	O(n^2)	O(n)
 Cube Sort	Ω(n)	θ(n log(n))	O(n log(n))	O(n)
+
+```
+
